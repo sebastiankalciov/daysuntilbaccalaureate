@@ -15,8 +15,8 @@ function Counter() {
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Displaying the info
-        document.getElementById("count").innerHTML = days + " Days, " + hours + " Hours, " + minutes + " Minutes, " + seconds + " Seconds";
-
+        document.getElementById("count").innerHTML = days + " days" + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
+        document.getElementById("days").innerHTML = days + " days"
         // Exception case, when exam date is reached
         if (distance < 0) {
             clearInterval(x);
