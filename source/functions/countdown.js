@@ -1,6 +1,7 @@
 function Counter() {
 
     var x = setInterval(function() {
+
         // Declaring a variable for exam date
         var finalDay = new Date ("Jun 26, 2023, 09:00:00")
         // Declaring a variable with today's date
@@ -14,13 +15,21 @@ function Counter() {
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        // Displaying the info
-        document.getElementById("count").innerHTML = days + " days" + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
-        document.getElementById("days").innerHTML = days + " days"
-        // Exception case, when exam date is reached
+        // Values assigned for each variable (days, hours, minutes, seconds)
+      
+        document.getElementById("days").innerHTML = days
+        document.getElementById("hours").innerHTML = hours
+        document.getElementById("minutes").innerHTML = minutes
+        document.getElementById("seconds").innerHTML = seconds
+
+        // Exception case. When the exam date is reached, all variables are set to 0
         if (distance < 0) {
+
             clearInterval(x);
-            document.getElementById("count").innerHTML = "Goodluck! May the force be with you!"
+            document.getElementById("days").innerHTML = 0
+            document.getElementById("hours").innerHTML = 0
+            document.getElementById("minutes").innerHTML = 0
+            document.getElementById("seconds").innerHTML = 0
         }
 
     }, 1000);

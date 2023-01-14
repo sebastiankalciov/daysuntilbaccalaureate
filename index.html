@@ -1,22 +1,37 @@
 <html>
-
     <head>
 
         <title>Days until Baccalaureate</title>
 
         <script type = "text/javascript" src="./source/functions/countdown.js"></script>
         <meta name = "viewport" content = "width=device-width, initial-scale=1">
-       <link rel = "stylesheet" href = "./source/style/style.css"></link>
-       
+        <link rel = "stylesheet" href = "./source/style/style.css"></link>
+        <link rel = "icon" type = "image/x-icon" href = "source/resources/favicon.ico">
     </head>
 
-
     <body onload = "Counter()">
-        <h1 id = "title"> Days until BAC </h1>
-        <h1 id = "count"></h1>
-        <h1 id = "days"></h1>
-        <h1 id = "minutes"></h1>
-        <h1 id = "seconds"></h1>
+        <!-- Title -->
+        <h1 id = "title"> Days until <b id = "highlight">BAC</b> </h1>
+
+        <!-- Table -->
+        <table id = "table">
+             <!-- Header -->
+            <tr id = "thead">
+                <th>Days</th>
+                <th>Hours</th>
+                <th>Minutes</th>
+                <th>Seconds</th>
+            </tr>
+            <!-- Body -->
+            <tr id = "tbody">
+                <td id = "days"> </td>
+                <td id = "hours"> </td>
+                <td id = "minutes"> </td>
+                <td id = "seconds"> </td>
+            </tr>
+        </table>
+
+
     </body>
 
 </html>
