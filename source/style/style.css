@@ -3,8 +3,8 @@
     src: url("../resources/Roboto-Regular.ttf");
   }
 
-
 html {
+
     background-color: rgb(11, 11, 11);
     color:white;
     font-family: 'Roboto';
@@ -17,6 +17,16 @@ html {
     user-select: none;
 }
 
+body {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+
+td, th {
+    padding: 1vh;
+}
+
 #title {
     margin-top: 5rem;
     font-size: 10vh;
@@ -24,7 +34,6 @@ html {
 }
 
 #table {
-
     margin: auto;
     border-collapse: collapse;
     width: 50%;
@@ -32,28 +41,23 @@ html {
     font-family: sans-serif;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
-
-
 }
 #thead {
     text-align: left;
     background-color: #009879;
     font-weight: bold;
-
 }
-td, th{
-    padding: 1vh;
+#tbody {
+    height: 10%;
+    background-color: rgb(32, 32, 32);
+
+
 }
 #highlight {
     color: #05caa3;
     font-weight: bold;
 }
-#tbody {
-    height: 10%;
-    background-color: rgb(32, 32, 32);
-    padding: 30px;
 
-}
 #days:hover, #hours:hover, #minutes:hover, #seconds:hover{
     transition: 0.3s;
     background-color:rgb(27, 27, 27);
