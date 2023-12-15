@@ -3,7 +3,7 @@ function Counter() {
     var x = setInterval(function() {
 
 
-        var finalDay = new Date ("Jun 26, 2023, 09:00:00")
+        var finalDay = new Date ("Jul 1, 2024, 09:00:00")
         var today = new Date().getTime();
         var distance = finalDay - today;
         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
