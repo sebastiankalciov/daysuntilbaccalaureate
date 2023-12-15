@@ -2,8 +2,7 @@ function Counter() {
 
     var x = setInterval(function() {
 
-
-        var finalDay = new Date ("Jul 1, 2024, 09:00:00")
+        var finalDay = new Date("Jul 1, 2024, 09:00:00")
         var today = new Date().getTime();
         var distance = finalDay - today;
         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -16,7 +15,7 @@ function Counter() {
         document.getElementById("minutes").innerHTML = minutes
         document.getElementById("seconds").innerHTML = seconds
 
-        // Exception case.
+        // If the date passed, set every counter to 0
         if (distance < 0) {
 
             clearInterval(x);
@@ -25,7 +24,6 @@ function Counter() {
             document.getElementById("minutes").innerHTML = 0
             document.getElementById("seconds").innerHTML = 0
         }
-
+        
     }, 1000);
-
 };
