@@ -1,2 +1,4 @@
-# daysuntilbaccalaureate
-Average Website that displays how many days are left until Romanian Highschool Final Exam (Baccalaureate)
+# 📅 daysuntilbaccalaureate
+Website that counts down how much time is left until **Romanian Highschool Final Exam** (Baccalaureate)
+
+![preview](https://i.imgur.com/XEPnree.png)
